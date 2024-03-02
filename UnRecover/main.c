@@ -146,6 +146,7 @@ int wipe_drive(char *drive_path, int pass_count)
     return 0;
 }
 
+// The main function to process the commands
 int main(int argc, char *argv[])
 {
     // Check if the drive letter is provided as an argument
@@ -153,7 +154,7 @@ int main(int argc, char *argv[])
     {
         printf("\nUnRecover 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
         printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-        printf("\nUsage: %s <drive letter> [--nobanner] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
+        printf("\nUsage: %s <drive letter> [--nobanner/-n] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
         printf("Use --help/-h to see the help menu.\n");
         return 1;
     }
@@ -169,7 +170,7 @@ int main(int argc, char *argv[])
     for (int i = 1; i < argc; i++)
     {
         // Check if the --nobanner flag is passed as an argument
-        if (strcmp(argv[i], "--nobanner") == 0)
+        if (strcmp(argv[i], "--nobanner") == 0 || strcmp(argv[i], "-n") == 0)
         {
             show_banner = 0;
         }
@@ -215,12 +216,12 @@ int main(int argc, char *argv[])
             // Print the help menu
             printf("\nUnRecover 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
             printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-            printf("\nUsage: %s <drive letter> [--nobanner] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
+            printf("\nUsage: %s <drive letter> [--nobanner/-n] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
             printf("\nOptions:\n");
-            printf("--nobanner\t\tSuppresses the banner.\n");
-            printf("--suppress-warning/-s\tSuppresses the warning message for SSDs.\n");
-            printf("--pass/-p <number>\tSets the number of passes to wipe the drive.\n");
-            printf("--help/-h\t\tShows this help menu.\n");
+            printf("-n, --nobanner\t\tSuppresses the banner.\n");
+            printf("-s, --suppress-warning\tSuppresses the warning message for SSDs.\n");
+            printf("-p, --pass <number>\tSets the number of passes to wipe the drive.\n");
+            printf("-h, --help\t\tShows this help menu.\n");
             return 0;
         }
         // Check if the drive letter is passed as an argument
