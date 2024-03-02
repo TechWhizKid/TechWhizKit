@@ -23,9 +23,18 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 - **Description:** Securely overwrite's sensitive files and clean free space of previously deleted files.
 
 - **Usage:**
-    ```bash
-    UnRecover.exe <drive letter> [--pass/-p <number>] [--nobanner] [--suppress-warning/-s]
-    ```
+  ```bash
+  UnRecover <drive letter> [--pass/-p <number>] [--nobanner] [--suppress-warning/-s]
+  ```
+
+#### SecurByte (1.0 Beta)
+
+- **Description:** A command-line application to encrypt and decrypt files using a password and AES-256-CBC algorithm.
+
+- **Usage:**
+  ```bash
+  SecurByte [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n]
+  ```
 
 ---
 
