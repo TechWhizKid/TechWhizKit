@@ -14,22 +14,22 @@
 git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 ```
 
-- _Or, obtain individual binaries for each tool from [here](./bin)._ 🚀
+- _Alternatively, you can download the binaries for each tool individually by clicking **[here](./bin)** or directly by clicking on the app's name._ 🚀
 
 ### Available Tools
 
-#### UnRecover (1.0 Beta)
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/UnRecover.exe">UnRecover</a>
 
 - **Description:** Securely overwrite's sensitive files and clean free space of previously deleted files.
 
 - **Usage:**
   ```bash
-  UnRecover <drive letter> [--pass/-p <number>] [--nobanner] [--suppress-warning/-s]
+  UnRecover <drive letter> [--pass/-p <number>] [--suppress-warning/-s] [--nobanner]
   ```
 
-#### SecurByte (1.0 Beta)
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/SecurByte.exe">SecurByte</a>
 
-- **Description:** A command-line application to encrypt and decrypt files using a password and AES-256-CBC algorithm.
+- **Description:** Encrypts and decrypts files using a password and AES-256-CBC algorithm.
 
 - **Usage:**
   ```bash
