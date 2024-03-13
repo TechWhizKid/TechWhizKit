@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #282A36;
+    color: #F8F8F2;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: linear-gradient(to right, #191A21, #23252E);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 24px;
+    color: #BD93F9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #BD93F9;
+}
+
+article {
+    margin-bottom: 30px;
+    border-left: 4px solid #BD93F9;
+    padding-left: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #F8F8F2;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #BD93F9;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    text-decoration-color: #BD93F9;
+}
+
+pre {
+    background: #221C35;
+    color: #CCCCCC;
+    padding: 15px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #44475A;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #BD93F9;
+    border-radius: 4px;
+}
+
+code {
+    font-family: 'Fira Code', 'Fira Mono', monospace;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
