@@ -36,6 +36,15 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   SecurByte [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/WiFiRe.exe">WiFiRe</a>
+
+- **Description:** Displays the passwords of previously accessed WiFi networks, in case you need to share them and you don’t remember their password.
+
+- **Usage:**
+  ```bash
+  WiFiRe [--help/-h] [--nobanner/-n]
+  ```
+
 ---
 
 ## Contributing
