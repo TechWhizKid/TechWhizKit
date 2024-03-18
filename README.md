@@ -45,6 +45,15 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   WiFiRe [--help/-h] [--nobanner/-n]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/LnkScout.exe">LnkScout</a>
+
+- **Description:** A tool designed to scan directories for Windows shortcut files, verifying their validity and offering options to display or remove invalid links.
+
+- **Usage:**
+  ```bash
+  LnkScout <directory path> [--valid/-v | --invalid/-i [--remove/-r]] [--nobanner/-n]
+  ```
+
 ---
 
 ## Contributing
