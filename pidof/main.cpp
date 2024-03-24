@@ -30,10 +30,21 @@ std::string trimQuotes(std::string str)
     return str;
 }
 
-// Function to execute the command and print the PID
-void findPID(const std::string &filename)
+// Function to execute the command and print the PID based on image name or window title
+void findPID(const std::string &filename, const std::string &title = "")
 {
-    std::string command = "tasklist /FI \"IMAGENAME eq " + filename + "\" /FO CSV";
+    std::string command;
+    if (title.empty())
+    {
+        // Original command for searching by image name
+        command = "tasklist /FI \"IMAGENAME eq " + filename + "\" /FO CSV";
+    }
+    else
+    {
+        // New command for searching by window title for v1.1
+        command = "tasklist /FI \"WINDOWTITLE eq " + title + "\" /FO CSV";
+    }
+
     std::string data;
     char buffer[128];
     FILE *pipe = _popen(command.c_str(), "r");
@@ -67,9 +78,10 @@ void findPID(const std::string &filename)
 int main(int argc, char *argv[])
 {
     bool show_banner = true;
+    std::string title;
 
     if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " [<filename>...] [--help/-h] [--nobanner/-n]\n";
+        std::cerr << "Usage: " << argv[0] << " [<filename>...[--title/-t <title>]] [--help/-h] [--nobanner/-n]\n";
         return 1;
     }
 
@@ -82,34 +94,46 @@ int main(int argc, char *argv[])
         }
         else if (arg == "--help" || arg == "-h")
         {
-            std::cout << "\nPidof 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+            std::cout << "\npidof 1.1 (x64) : (c) TechWhizKid - All rights reserved.\n"
                       << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n"
-                      << "\nUsage: " << argv[0] << " [<filename>...] [--help/-h] [--nobanner/-n]\n"
+                      << "\nUsage: " << argv[0] << " [<filename>...[--title/-t <title>]] [--help/-h] [--nobanner/-n]\n"
                       << "\nOptions:\n"
                       << " -h, --help         Display this help menu.\n"
                       << " -n, --nobanner     Suppresses the banner.\n"
+                      << " -t, --title        Specify the window title(s) of the process(es) to find the PID.\n"
+                      << "                    Multiple titles can be specified separated by space after each -t flag.\n"
                       << "   <filename>       Specify the filename(s) of the process(es) to find the PID.\n"
                       << "                    Multiple filenames can be specified separated by space.\n";
             return 0;
+        }
+        else if (arg == "-t" || arg == "--title")
+        {
+            if (i + 1 < argc)
+            {
+                title = argv[++i];
+            }
+            else
+            {
+                std::cerr << "Error: No title specified for " << arg << " option.\n";
+                return 1;
+            }
         }
     }
 
     if (show_banner)
     {
-        std::cout << "\nLnkScout 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+        std::cout << "\npidof 1.1 (x64) : (c) TechWhizKid - All rights reserved.\n"
                   << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n";
     }
 
-    // Print the table header once
     std::cout << "\n"
               << std::left << std::setw(20) << "Image Name"
               << std::setw(10) << "PID"
               << std::setw(15) << "Memory Usage" << std::endl;
 
-    // Loop through each filename provided in the command line arguments
     for (int i = 1; i < argc; ++i) {
         std::string filename(argv[i]);
-        findPID(filename);
+        findPID(filename, title);
     }
 
     return 0;

@@ -56,11 +56,11 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 
 #### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/pidof.exe">Pidof</a>
 
-- **Description:** Pidof is a tool that can list the PIDs and memory usage of specified processes by their file names.
+- **Description:** pidof is a tool that can list the PIDs and memory usage of specified processes by their file names or window title.
 
 - **Usage:**
   ```bash
-  pidof [<filename>...] [--help/-h] [--nobanner/-n]
+  pidof [<filename>...[--title/-t <title>]] [--help/-h] [--nobanner/-n]
   ```
 
 ---
