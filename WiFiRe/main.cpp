@@ -101,12 +101,12 @@ int main(int argc, char *argv[])
         // If the argument is "--help" or "-h", print the help menu and exit
         if (string(argv[i]).compare("--help") == 0 || string(argv[i]).compare("-h") == 0)
         {
-            printf("\nWiFiRe 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n");
-            printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-            printf("\nUsage: %s [--nobanner/-n] [--help/-h]\n", argv[0]);
-            printf("\nOptions:\n");
-            printf("-n, --nobanner\t\tSuppresses the banner.\n");
-            printf("-h, --help\t\tShows this help menu.\n");
+            cout << "\nWiFiRe 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+                 << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n"
+                 << "\nUsage: " << argv[0] << " [--nobanner/-n] [--help/-h]\n"
+                 << "\nOptions:\n"
+                 << "-h, --help\t\tShows this help menu.\n"
+                 << "-n, --nobanner\t\tSuppresses the banner.\n";
             return 0;
         }
     }
@@ -114,8 +114,8 @@ int main(int argc, char *argv[])
     // If the flag is 1, print the banner
     if (show_banner)
     {
-        printf("\nWiFiRe 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n");
-        printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
+        cout << "\nWiFiRe 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+             << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n";
     }
 
     // Print a message indicating the start of the process
@@ -126,7 +126,8 @@ int main(int argc, char *argv[])
 
     // Print the table header with fixed width and alignment
     cout << left << setw(30) << setfill(' ') << "SSID";
-    cout << left << setw(30) << setfill(' ') << "Password" << "\n";
+    cout << left << setw(30) << setfill(' ') << "Password"
+         << "\n";
 
     // Print a horizontal line
     cout << string(60, '-') << "\n";

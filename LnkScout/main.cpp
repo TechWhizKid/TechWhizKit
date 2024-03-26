@@ -126,13 +126,13 @@ int main(int argc, char *argv[])
             // Display help message and exit
             std::cout << "\nLnkScout 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
                       << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n"
-                      << "\nUsage: " << argv[0] << " <directory path> [--valid/-v | --invalid/-i [--remove/-r]] [--nobanner/-n]\n"
+                      << "\nUsage: " << argv[0] << " <directory path> [--valid/-v | --invalid/-i [--remove/-r]] [--nobanner/-n] [--help/-h]\n"
                       << "\nOptions:\n"
+                      << " -h, --help         Show this help message.\n"
                       << " -n, --nobanner     Suppresses the banner.\n"
                       << " -v, --valid        Display only valid links.\n"
                       << " -i, --invalid      Display only invalid links.\n"
-                      << " -r, --remove       Remove invalid links.\n"
-                      << " -h, --help         Show this help message.\n";
+                      << " -r, --remove       Remove invalid links.\n";
             return 0;
         }
         // Handle options to display valid or invalid links

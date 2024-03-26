@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set the project name and version
-project(Pidof VERSION 1.0)
+project(pidof VERSION 1.1)
 
 # Set the C++ standard to 17
 set(CMAKE_CXX_STANDARD 17)

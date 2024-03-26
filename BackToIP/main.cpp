@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                std::cerr << "\n-u/--url option requires one argument.\n";
+                std::cerr << "\n--url/-u option requires one argument.\n";
                 return 1;
             }
         }
@@ -132,7 +132,7 @@ int main(int argc, char *argv[])
 
     if (urlIt == cmdArgs.end())
     {
-        std::cerr << "\nURL not specified. Use -u/--url to specify the URL.\n";
+        std::cerr << "\nURL not specified. Use --url/-u to specify the URL.\n";
         return 1;
     }
 

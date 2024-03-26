@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 # Define the project name and the language
-project(SecurByte C)
+project(SecurByte VERSION 1.0)
 
 # Define the source files
 set(SRC main.c aes.c sha256.c)

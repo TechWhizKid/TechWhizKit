@@ -24,7 +24,7 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 
 - **Usage:**
   ```bash
-  UnRecover <drive letter> [--pass/-p <number>] [--suppress-warning/-s] [--nobanner]
+  UnRecover <drive letter> [--pass/-p <number>] [--suppress-warning/-s] [--nobanner] [--help/-h]
   ```
 
 #### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/SecurByte.exe">SecurByte</a>
@@ -33,7 +33,7 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 
 - **Usage:**
   ```bash
-  SecurByte [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n]
+  SecurByte [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n] [--help/-h]
   ```
 
 #### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/WiFiRe.exe">WiFiRe</a>
@@ -42,7 +42,7 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 
 - **Usage:**
   ```bash
-  WiFiRe [--help/-h] [--nobanner/-n]
+  WiFiRe [--nobanner/-n] [--help/-h]
   ```
 
 #### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/LnkScout.exe">LnkScout</a>
@@ -51,16 +51,16 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
 
 - **Usage:**
   ```bash
-  LnkScout <directory path> [--valid/-v | --invalid/-i [--remove/-r]] [--nobanner/-n]
+  LnkScout <directory path> [--valid/-v | --invalid/-i [--remove/-r]] [--nobanner/-n] [--help/-h]
   ```
 
-#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/pidof.exe">Pidof</a>
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/pidof.exe">pidof</a>
 
 - **Description:** pidof is a tool that can list the PIDs and memory usage of specified processes by their file names or window title.
 
 - **Usage:**
   ```bash
-  pidof [<filename>...[--title/-t <title>]] [--help/-h] [--nobanner/-n]
+  pidof [<filename>...[--title/-t <title>]] [--nobanner/-n] [--help/-h]
   ```
 
 ---

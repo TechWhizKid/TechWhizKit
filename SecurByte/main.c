@@ -189,7 +189,7 @@ int main(int argc, char *argv[])
     {
         printf("\nSecurByte 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
         printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-        printf("\nUsage: %s [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n]\n", argv[0]);
+        printf("\nUsage: %s [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n] [--help/-h]\n", argv[0]);
         printf("Use --help/-h to see the help menu.\n");
         return 1;
     }
@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
         {
             printf("\nSecurByte 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
             printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-            printf("\nUsage: %s [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n]\n", argv[0]);
+            printf("\nUsage: %s [--encrypt-file/-ef | --decrypt-file/-df <filepath>] [--passwd/-p <password>] [--nobanner/-n] [--help/-h]\n", argv[0]);
             printf("\nOptions:\n");
             printf("  -ef, --encrypt-file <filepath>   Encrypts the file at the given path using AES-256-CBC.\n");
             printf("  -df, --decrypt-file <filepath>   Decrypts the file at the given path using AES-256-CBC.\n");

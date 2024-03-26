@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
     {
         printf("\nUnRecover 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
         printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-        printf("\nUsage: %s <drive letter> [--nobanner/-n] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
+        printf("\nUsage: %s <drive letter> [--suppress-warning/-s] [--pass/-p <number>] [--nobanner/-n] [--help/-h]\n", argv[0]);
         printf("Use --help/-h to see the help menu.\n");
         return 1;
     }
@@ -216,7 +216,7 @@ int main(int argc, char *argv[])
             // Print the help menu
             printf("\nUnRecover 1.0 Beta (x64) : (c) TechWhizKid - All rights reserved.\n");
             printf("Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n");
-            printf("\nUsage: %s <drive letter> [--nobanner/-n] [--suppress-warning/-s] [--pass/-p <number>]\n", argv[0]);
+            printf("\nUsage: %s <drive letter> [--suppress-warning/-s] [--pass/-p <number>] [--nobanner/-n] [--help/-h]\n", argv[0]);
             printf("\nOptions:\n");
             printf("-n, --nobanner\t\tSuppresses the banner.\n");
             printf("-s, --suppress-warning\tSuppresses the warning message for SSDs.\n");

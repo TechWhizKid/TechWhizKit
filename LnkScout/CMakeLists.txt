@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Define the project name
-project(LnkScout)
+project(LnkScout VERSION 1.0)
 
 # Add an executable to the project using the specified source files
 add_executable(main main.cpp)
