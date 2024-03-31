@@ -63,6 +63,15 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   pidof [<filename>...[--title/-t <title>]] [--nobanner/-n] [--help/-h]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/BackToIP.exe">BackToIP</a>
+
+- **Description:** Finds IPv4 and IPv6 addresses of any specified url.
+
+- **Usage:**
+  ```bash
+  BackToIP --url/-u <url> [--nobanner/-n] [--help/-h]
+  ```
+
 ---
 
 ## Contributing
