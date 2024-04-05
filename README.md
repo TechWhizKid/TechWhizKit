@@ -72,6 +72,14 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   BackToIP --url/-u <url> [--nobanner/-n] [--help/-h]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/PulseNet.exe">PulseNet</a>
+
+- **Description:** Tool to measure the peak download and upload speeds of your internet connection.
+- **Usage:**
+  ```bash
+  PulseNet [--upload/-u] [--download/-d] [--nobanner/-n] [--help/-h]
+  ```
+
 ---
 
 ## Contributing
