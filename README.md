@@ -80,6 +80,15 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   PulseNet [--upload/-u] [--download/-d] [--nobanner/-n] [--help/-h]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/ADSman.exe">ADSman</a>
+
+- **Description:** A versatile command-line utility for managing alternate data streams in files on NTFS file systems.
+
+- **Usage:**
+  ```bash
+  ADSman [--file/-f <file>] [--add/-a <source> --to/-t <target>] [[--remove/-rm | --extract/-e <adsName>] --from-file/-ff <filename>] [--nobanner/-n] [--help/-h]
+  ```
+
 ---
 
 ## Contributing
