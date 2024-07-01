@@ -89,6 +89,15 @@ git clone --depth 1 https://github.com/TechWhizKid/TechWhizKit.git
   ADSman [--file/-f <file>] [--add/-a <source> --to/-t <target>] [[--remove/-rm | --extract/-e <adsName>] --from-file/-ff <filename>] [--nobanner/-n] [--help/-h]
   ```
 
+#### <a href="https://github.com/TechWhizKid/TechWhizKit/raw/main/bin/HowFastIs.exe">HowFastIs</a>
+
+- **Description:** A command-line utility to check how fast a program finishes executing.
+
+- **Usage:**
+  ```bash
+  HowFastIs [--file/-f <filename>] [--nobanner/-n] [--help/-h]
+  ```
+
 ---
 
 ## Contributing
