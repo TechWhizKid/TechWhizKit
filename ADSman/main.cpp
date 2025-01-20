@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
         }
         else if ((arg == "--from-file" || arg == "-ff") && i + 1 < argc)
         {
-            target, source = argv[++i];
+            target = argv[++i];
         }
         else if (arg == "--help" || arg == "-h")
         {
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 
     if (helpFlag)
     {
-        std::cout << "\nADSman 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+        std::cout << "\nADSman 1.1 (x64) : (c) TechWhizKid - All rights reserved.\n"
                   << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n"
                   << "\nUsage: " << argv[0] << " [--file/-f <file>] [--add/-a <source> --to/-t <target>] [[--remove/-rm | --extract/-e <adsName>] --from-file/-ff <filename>] [--nobanner/-n] [--help/-h]\n"
                   << "\nOptions:\n"
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     }
     else if (ShowBanner)
     {
-        std::cout << "\nADSman 1.0 (x64) : (c) TechWhizKid - All rights reserved.\n"
+        std::cout << "\nADSman 1.1 (x64) : (c) TechWhizKid - All rights reserved.\n"
                   << "Source - \"https://github.com/TechWhizKid/TechWhizKit\"\n";
     }
 
@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
     {
         FindADS(fileToView);
     }
-    else if (removeFlag && !target.empty())
+    else if (removeFlag && !adsToRemove.empty() && !target.empty())
     {
         RemoveADS(adsToRemove, target);
     }
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        std::cerr << "\nUsage: " << argv[0] << " [--file/-f <file>] [--add/- <source> --to/- <target>] [--remove/-rm <adsName> --from-file/-ff <file>] [--nobanner/-n] [--help/-h]"
+        std::cerr << "\nUsage: " << argv[0] << " [--file/-f <file>] [--add/-a <source> --to/- <target>] [--remove/-rm <adsName> --from-file/-ff <file>] [--nobanner/-n] [--help/-h]"
                   << "\nUse --help or -h for usage information." << std::endl;
         return 1;
     }
